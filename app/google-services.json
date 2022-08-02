@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "944118024950",
+    "firebase_url": "https://notation-e451a-default-rtdb.firebaseio.com",
+    "project_id": "notation-e451a",
+    "storage_bucket": "notation-e451a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:944118024950:android:268d09440b44532c123ad7",
+        "android_client_info": {
+          "package_name": "com.example.notebookexample2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "944118024950-kr1gc0rhg6mehks39f3kioco04h555gl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBC_pDzGO-eLWguHbmNiQaFs6CItO93iAQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "944118024950-kr1gc0rhg6mehks39f3kioco04h555gl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

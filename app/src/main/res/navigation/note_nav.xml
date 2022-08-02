@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/note_nav"
+    app:startDestination="@id/noteFragment">
+
+    <fragment
+        android:id="@+id/noteFragment"
+        android:name="com.example.notebookexample2.notefragments.NoteFragment"
+        android:label="NoteFragment"
+        tools:layout="@layout/fragment_note"
+        >
+        <action
+            android:id="@+id/actionNoteToDetail"
+            app:destination="@id/noteDetailFragment"
+            app:enterAnim="@android:anim/fade_in" />
+    </fragment>
+    <fragment
+        android:id="@+id/addNoteFragment"
+        android:name="com.example.notebookexample2.notefragments.AddNoteFragment"
+        android:label="AddNoteFragment"
+        tools:layout="@layout/fragment_add_note"
+        >
+        <action
+            android:id="@+id/addNoteToNotes"
+            app:destination="@id/noteFragment"
+            app:popUpTo="@id/addNoteFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/noteDetailFragment"
+        android:name="com.example.notebookexample2.notefragments.NoteDetailFragment"
+        android:label="NoteDetailFragment"
+        tools:layout="@layout/fragment_note_detail"
+        >
+        <argument
+            android:name="note"
+            app:argType="com.example.notebookexample2.classes.Notes" />
+        <action
+            android:id="@+id/actionDetailToNotes"
+            app:destination="@id/noteFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:popUpTo="@id/noteDetailFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>
